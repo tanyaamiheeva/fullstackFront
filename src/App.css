@@ -1,0 +1,549 @@
+.popup {
+  position: fixed;
+  z-index: 10000;
+  top: 50%;
+  /*transform: translateY(-50%);*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ECDA99;
+  border-radius: 10px;
+  border: 1px solid #543417;
+  width: 30%;
+}
+
+.popupHeader {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration-line: underline;
+  margin: 0 0.5em
+}
+
+.popupHeader2 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #543417;
+}
+
+.popupBlur {
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+}
+
+.Deadlines-img {
+  position: relative;
+  /*right: 10%;*/
+  /*bottom: 0;*/
+  width: 100%
+}
+
+.Deadlines-list-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Deadlines-paper-input {
+  width: -webkit-fill-available;
+  margin: 0.3em;
+  background: #E3C867B0;
+  border: none;
+  border-radius: 5px;
+  padding: 0.2em;
+}
+
+.Deadlines-input-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Add-deadline {
+  /*width: 40%;*/
+  /*height: 40%;*/
+  background-color: #E3C867AB;
+  /*margin-left: 5%;*/
+}
+
+.Deadlines-list-header {
+  color: #543417;
+  margin: 0;
+  padding: 0.3em 0;
+  text-align: center;
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+
+.Deadlines-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Deadlines-list {
+  width: 40%;
+  height: 94%;
+  background-color: #E3C867AB;
+  margin-left: 5%;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.Page {
+  height: 100%;
+}
+
+.App-header {
+  background-color: #bfd7fb;
+  height: 12%;
+  width: 100%;
+  position: relative;
+}
+
+.App-header-main {
+  background-color: #bfd7fb;
+  height: 12%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.Main-header-text {
+  font-size: 69px;
+  color: #0069b3;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em 1em;
+}
+
+.Button-main {
+  background-color: #0069b3;
+  color: #e9f3fd;
+  border-radius: 15px;
+  font-size: 28px;
+  padding: 0.25em 2em;
+  border-color: transparent;
+}
+
+.Button-main:hover {
+  border-color: #cde2f8;
+  cursor: pointer;
+}
+
+.Main-image {
+  height: 100%;
+}
+
+.Main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.Main-text-subheader {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin: 0.3em 0;
+}
+
+.Main-text {
+  font-size: 27px;
+  color: #000000;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.6em;
+}
+
+.Button-to-home {
+  background-color: #bfd7fb;
+  color: #0069b3;
+  font-size: 28px;
+  font-weight: bold;
+  border-color: transparent;
+  text-decoration: underline;
+}
+
+.Button-to-home:hover {
+  cursor: pointer;
+}
+
+.Button-login {
+  position: inherit;
+  background-color: #0069b3;
+  color: #e9f3fd;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: center;
+  padding: 0.25em 2em;
+  border-color: transparent;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.Button-login:hover {
+  border-color: #cde2f8;
+  cursor: pointer;
+}
+
+.Main-page-block {
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 55%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Login-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  background-color: #e9f3fd;
+  border-radius: 18px;
+  height: 60%;
+  min-height: 300px;
+}
+
+.Signup-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 4%;
+  background-color: #e9f3fd;
+  border-radius: 18px;
+  height: 60%;
+  min-height: 500px;
+}
+
+.Signup-main-text {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #0069b3;
+}
+
+.Signup-left-block {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Signup-right-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+}
+
+.Signup-content-block {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.Signup-image {
+  margin-top: 4%;
+  height: 55%;
+  align-self: center;
+}
+
+.Button-signup {
+  position: inherit;
+  background-color: #0069b3;
+  color: #e9f3fd;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: center;
+  width: 90%;
+  padding: 0.5em 0;
+  border-color: transparent;
+  margin-top: 10%;
+}
+
+.Button-signup:hover {
+  border-color: #cde2f8;
+  cursor: pointer;
+}
+
+.Signup-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0069b3;
+  margin-left: 3%
+}
+
+.Signup-input {
+  background-color: #ffffff;
+  height: 12%;
+  margin-left: 3%;
+  margin-right: 12%;
+  border: none;
+  border-radius: 18px;
+  font-size: 24px;
+  outline: none;
+  padding: 0 20px;
+}
+
+.Signup-checkbox {
+  background-color: #ffffff;
+  margin-left: 4%;
+  height: 70px;
+  border: none;
+  font-size: 24px;
+  outline: none;
+  padding: 0 20px;
+  width: 8%;
+}
+
+.Signup-agreement {
+  display: flex;
+  flex-direction: row;
+}
+
+.Signup-agreement-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0069b3;
+  margin-left: 3%;
+  width: 90%;
+  padding: 0 10px;
+  align-self: center;
+}
+
+.Login-text-header {
+  font-size: 55px;
+  font-weight: bold;
+  color: #0069b3;
+  text-align: center
+}
+
+.Login-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0069b3;
+  margin-left: 3%
+}
+
+.Login-text-signup {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0069b3;
+  text-align: center;
+}
+
+.Login-link-signup {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0069b3;
+  margin-left: 0.5em
+}
+
+.Login-input {
+  background-color: #ffffff;
+  height: 70px;
+  margin-left: 3%;
+  margin-right: 3%;
+  border: none;
+  border-radius: 18px;
+  font-size: 24px;
+  outline: none;
+  padding: 0 20px;
+}
+
+.Flex-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Right-header-positioning {
+  position: absolute;
+  right: 5%;
+}
+
+.Left-header-positioning {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.Profile-main-block {
+  background-color: #e3c867;
+  height: 88%;
+  display: flex;
+}
+
+.Button-folder-inactive {
+  position: inherit;
+  background-color: #d2b346;
+  font-size: 18px;
+  font-weight: bold;
+  color: #543417;
+  align-self: end;
+  width: 13%;
+  padding: 0.5em 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-color: transparent;
+  margin-right: 8px;
+}
+
+.Button-folder-inactive:hover {
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.Button-folder-active {
+  position: inherit;
+  background-color: #e3c867;
+  font-size: 18px;
+  font-weight: bold;
+  color: #543417;
+  align-self: end;
+  width: 13%;
+  padding: 0.5em 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-color: transparent;
+  margin-right: 8px;
+}
+
+.Pages-top {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 90%;
+  margin: 2% 5% 4% 3%;
+  box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Pages-bottom {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 90%;
+  margin: 4% 3% 3% 5%;
+  box-shadow: 12px 12px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Section-title-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /*height: 10%*/
+}
+
+.Section-title {
+  font-size: 42px;
+  color: black;
+  margin: 1% 0 0 3%;
+}
+
+/*.Schedule-button {*/
+/*  background-color: #bfd7fb;*/
+/*  border-radius: 7px;*/
+/*  !*font-size: 24px;*!*/
+/*  !*align-self: end;*!*/
+/*  !*padding-left: 3em;*!*/
+/*  !*padding-right: 1em;*!*/
+/*  border-color: #848fed;*/
+/*  height: 60%;*/
+/*}*/
+
+/*.Schedule-button:hover {*/
+/*  border-color: #848fed;*/
+/*  cursor: pointer;*/
+/*}*/
+
+.Schedule-pen {
+  /*height: 100%;*/
+  height: 16px;
+  margin-right: 0.8em;
+}
+
+.Profile-input-flex {
+  display: flex;
+  margin: 1em 0;
+}
+
+.Profile-input-title {
+  text-align: right;
+  margin: 0.3em 0.5em;
+  width: 5em;
+}
+
+.Profile-input {
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin: 0 0.5em;
+  outline: none;
+}
+
+.Blue-button {
+  background-color: #BFD7FB;
+  border: 1px #848FED solid;
+  border-radius: 7px;
+  padding: 0.2em 1em;
+  transition: 0.3s;
+  display: flex;
+}
+
+.Blue-button:hover {
+  cursor: pointer;
+}
+
+.Blue-button:active {
+  background-color: #0069b3;
+}
+
+* {
+  font-family: Roboto, serif !important;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
